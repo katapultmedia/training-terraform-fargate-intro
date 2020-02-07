@@ -4,6 +4,8 @@
 
 [AWS Fargate](https://aws.amazon.com/fargate/) is "serverless" compute for containers. Ok...there are servers somewhere doing something, BUT you at least don't have to worry about managing infrastructure. It makes right-sizing considerably easier. Fargate is one of the deployment options for [AWS Elastic Container Service](https://aws.amazon.com/ecs). ECS is a container orchestrator like Kubernetes.
 
+Watch the [ClickOps version](https://youtu.be/imGPwpwm3PY) first to get an understanding of Fargate. This tutorial covers going from ClickOps to terraforming the same Fargate setup.
+
 ## Usage
 
 This project is not intended to be used as a module for remote use. Take the files, customize them, and use them to your hearts content. Create an issue if you have questions.
@@ -16,6 +18,8 @@ The [Makefile](Makefile) has general commands to use for ease of development. Th
 Available targets:
 fmt                            Formats the TF
 init                           Install required tools for local environment
+apply                          TF Apply the terraform directory
+destroy                        TF Destroy the terraform directory
 plan                           TF Plan the terraform directory
 ```
 

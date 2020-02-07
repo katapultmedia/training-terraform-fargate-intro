@@ -14,6 +14,7 @@ init: ## Install required tools for local environment
 
 apply:
 	cd terraform && \
+	terraform init && \
 	terraform apply
 
 destroy:
